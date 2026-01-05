@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Building a Custom Google Maps Theme</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            gmp-map {
+                height: 400px;
+                width: 100%;
+            }
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtRdEh9UZ8-nME5Iafej7Y290x-mScihg&libraries=maps&v=beta"></script>
+    </head>
+    <body>
+        <gmp-map 
+        center="41.027748173921374, -92.41852445367961" 
+        zoom="13" 
+        map-id="5126afa020255af0194760b0" 
+        style="height: 400px">
+            <gmp-advanced-marker 
+            position="41.027748173921374, -92.41852445367961" 
+            title="Ottumwa, IA">
+        </gmp-advanced-marker>
+        </gmp-map>
+    </body>
+</html>
